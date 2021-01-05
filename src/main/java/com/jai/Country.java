@@ -17,7 +17,7 @@ public class Country {
 	public void setId(int id) {
 		this.id = id;
 	}
-	@ApiModelProperty(position = 2, required = true, value = "India")
+	@ApiModelProperty(position = 2, required = true, value = "xxx")
 	public String getName() {
 		return name;
 	}
