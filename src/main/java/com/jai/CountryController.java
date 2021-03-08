@@ -16,10 +16,16 @@ import org.eclipse.egit.github.core.service.IssueService;
 @RestController
 public class CountryController {
 	
-	@RequestMapping(method = RequestMethod.GET, value = "/api/javainuse")
+	/*@RequestMapping(method = RequestMethod.GET, value = "/api/javainuse")
 	public String sayHello() {
 		return "Swagger Hello World";
-	}
+	}*/
+	
+	 @RequestMapping(path="/")
+	    public String login() {
+	        System.out.println("******************logging************************");
+	        return "login";
+	    }
 	@RequestMapping(method = RequestMethod.POST, value = "/api/javainuse2", produces="application/json", consumes="application/json")
 	public String sayHello2() throws IOException {
 		GitHubClient client = new GitHubClient("api.github.com");
